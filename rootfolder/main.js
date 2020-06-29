@@ -4,7 +4,7 @@ $(document).ready(function () {
     });
     $("#advance-button").click(function () {
         window.location.href="#calc";
-        $(".normal, .value1,.value2, .values p, #advance-button").hide();
+        $("#normal, .value1,.value2, .values p, #advance-button").hide();
         $(".value3, #normal-button, .advanced, .later").fadeIn();
     });
     $("#normal-button").click(function () {
