@@ -32,7 +32,7 @@ $(document).ready(function () {
     });
     $("#sr, #add, #sub, #mul, #divide, #square, .advanced").click(function () {
         $("#reload").show();
-        window.location.href="#calc";
+        window.location.href="#calc-wrapper";
     });
 
     $("#reload, #reload-bmi").click(function () {
@@ -41,10 +41,11 @@ $(document).ready(function () {
     $("#cal").click(function () {
         $(".details, #cal").hide();
         $("#bmi-cal").fadeIn();
-        window.location.href="#bmi";
+        window.location.href="#bmi-wrapper";
     });
     $("#result").click(function () {
         Bmi();
+        window.location.href="#bmi-wrapper";
         $("#reload-bmi").show();
     });
 });
