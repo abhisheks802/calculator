@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-compressed.js"></script>
+</head>
+<body>
+<div class="header">
+    <div>
+        <h1>Calculator</h1>
+    </div>
+    <div class="dropdown">
+        Find Me <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+    </div>
+    <div class="social-box">
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100000985955408" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/abhisheks802" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/abhikhushiabhigum/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <div class="menu-box">
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#calc">Basic-Calc</a></li>
+            <li><a href="#bmi">BMI-Calc</a></li>
+        </ul>
+    </div>
+</div>
+<div class="home" id="home">
+    <div class="calc">
+        <div class="wrapper">
+            <div class="welcome">
+                <h2>Welcome !</h2>
+            </div>
+            <i class="fa fa-calculator fa-lg" aria-hidden="true"></i>
+            <div class="basic">
+                <a href="#calc"><h2>Calculator</h2></a>
+            </div>
+            <div class="bmi-button">
+                <a href="#bmi"><h2>BMI Calculator</h2></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="calculator" id="calc">
+    <h1>Calculator</h1>
+    <div class="calc-wrapper">
+        <div class="values" id="values">
+            <p>Enter Value 1</p>
+            <input class="value1" id="value1" placeholder="Enter value">
+            <p>Enter Value 2</p>
+            <input class="value2" id="value2" placeholder="Enter value">
+            <p class="later">Enter Value</p>
+            <input class="value3" id="value3" placeholder="Enter value">
+        </div>
+        <div class="operators" id="operators">
+          <div class="sub" id="normal-button">
+              <h3>Back to basic</h3>
+           </div>
+          <div class="normal" id="normal">
+            <div class="add" id="add">
+                <h3>Add</h3>
+            </div>
+            <div class="sub" id="sub">
+                <h3>Subtract</h3>
+            </div>
+            <div class="mul" id="mul">
+                <h3>Multiply</h3>
+            </div>
+            <div class="divide" id="divide">
+                <h3>Divide</h3>
+            </div>
+          </div>
+          <div class="sub" id="advance-button">
+              <h3>Other</h3>
+          </div>
+          <div class="advanced" id="normal">
+            <div class="add" id="square">
+                <h3>Square</h3>
+            </div>
+            <div class="sub" id="sr">
+                <h3>Square Root</h3>
+            </div>
+        </div>
+    </div>
+    <div class="add" id="reload">
+            <h3>Calculate Again</h3>
+    </div>
+</div>
+</div>
+<div class="bmi" id="bmi">
+    <h1>BMI Calculator</h1>
+    <div class="bmi-wrapper">
+      <div class="details">
+        <p>BMI is used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between.</p>
+       </div>
+        <div class="add" id="cal">
+            <h3>Calculate</h3>
+        </div>
+        <div class="bmi-cal" id="bmi-cal">
+            <div class="bmi-values" id="bmi-values">
+            <p>Enter Weight(in kg)</p>
+            <input class="weight" id="weight" placeholder="Weight in kg">
+            <p>Enter Height(in cm)</p>
+            <input class="height" id="height" placeholder="Height in cm">
+        </div>
+            <div class="operators" id="operators-bmi">
+          <div class="normal">
+            <div class="add" id="result">
+                <h3>Result</h3>
+            </div>
+          </div>
+        </div>
+        <div class="add" id="reload-bmi">
+            <h3>Calculate Again</h3>
+    </div>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>
