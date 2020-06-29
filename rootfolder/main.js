@@ -35,18 +35,21 @@ $(document).ready(function () {
         window.location.href="#calc-wrapper";
     });
 
-    $("#reload, #reload-bmi").click(function () {
+    $("#reload").click(function () {
         location.reload();
     });
     $("#cal").click(function () {
         $(".details, #cal").hide();
         $("#bmi-cal").fadeIn();
-        window.location.href="#bmi-wrapper";
+        window.location.href="#bmi";
     });
     $("#result").click(function () {
         Bmi();
-        window.location.href="#bmi-wrapper";
+        window.location.href="#bmi";
         $("#reload-bmi").show();
+    });
+    $("#reload-bmi").click(function () {
+        Bmi();
     });
 });
 
