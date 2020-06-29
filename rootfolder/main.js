@@ -52,6 +52,7 @@ $(document).ready(function () {
 function Add() {
     let val1 = parseInt($("#value1").val());
     let val2 = parseInt($("#value2").val());
+    
     let result = val1 + val2;
     if (Number.isInteger(val1) && Number.isInteger(val2)){
         $(".operators").html("<h4>The result is " + result + "</h4>");
@@ -64,6 +65,9 @@ function Add() {
     }
 }
 function Sub(){
+  let val1 = parseInt($("#value1").val());
+  let val2 = parseInt($("#value2").val());  
+  
   let result = val1 - val2;
   if (Number.isInteger(val1) && Number.isInteger(val2)){
         $(".operators").html("<h4>The result is " + result + "</h4>");
