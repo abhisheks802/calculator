@@ -56,13 +56,13 @@ function Add() {
     
     let result = val1 + val2;
     if (Number.isInteger(val1) && Number.isInteger(val2)){
-        $(".operators").html("<h4>The result is " + result + "</h4>");
+        $("#operators").html("<h4>The result is " + result + "</h4>");
     }
     else {
-        $(".operators").html("<h4>Please enter a valid number!</h4>");
+        $("#operators").html("<h4>Please enter a valid number!</h4>");
     }
     if(result > 10000000 ){
-        $(".operators").html("<h4>Please enter a smaller number!</h4>");
+        $("#operators").html("<h4>Please enter a smaller number!</h4>");
     }
 }
 function Sub(){
@@ -71,13 +71,13 @@ function Sub(){
   
   let result = val1 - val2;
   if (Number.isInteger(val1) && Number.isInteger(val2)){
-        $(".operators").html("<h4>The result is " + result + "</h4>");
+        $("#operators").html("<h4>The result is " + result + "</h4>");
     }
     else {
-        $(".operators").html("<h4>Please enter a valid number!</h4>");
+        $("#operators").html("<h4>Please enter a valid number!</h4>");
     }
     if(result > 10000000 ){
-        $(".operators").html("<h4>Please enter a smaller number!</h4>");
+        $("#operators").html("<h4>Please enter a smaller number!</h4>");
     }
 }
 function Mul(){
@@ -86,13 +86,13 @@ function Mul(){
 
   let result = val1 * val2;
   if (Number.isInteger(val1) && Number.isInteger(val2)){
-        $(".operators").html("<h4>The result is " + result + "</h4>");
+        $("#operators").html("<h4>The result is " + result + "</h4>");
     }
     else {
-        $(".operators").html("<h4>Please enter a valid number!</h4>");
+        $("#operators").html("<h4>Please enter a valid number!</h4>");
     }
     if(result > 10000000 ){
-        $(".operators").html("<h4>Please enter a smaller number!</h4>");
+        $("#operators").html("<h4>Please enter a smaller number!</h4>");
     }
 }
 function Divide(){
@@ -102,13 +102,13 @@ function Divide(){
   let result = val1 / val2;
   result = result.toFixed(2);
   if (Number.isInteger(val1) && Number.isInteger(val2)){
-        $(".operators").html("<h4>The result is " + result + "</h4>");
+        $("#operators").html("<h4>The result is " + result + "</h4>");
     }
     else {
-        $(".operators").html("<h4>Please enter a valid number!</h4>");
+        $("#operators").html("<h4>Please enter a valid number!</h4>");
     }
     if(result > 10000000 ){
-        $(".operators").html("<h4>Please enter a smaller number!</h4>");
+        $("#operators").html("<h4>Please enter a smaller number!</h4>");
     }
 }
 function Square(){
@@ -116,13 +116,13 @@ function Square(){
 
   let result = val3 * val3;
   if (Number.isInteger(val3)){
-        $(".operators").html("<h4>The result is " + result + "</h4>");
+        $("#operators").html("<h4>The result is " + result + "</h4>");
     }
     else {
-        $(".operators").html("<h4>Please enter a valid number!</h4>");
+        $("#operators").html("<h4>Please enter a valid number!</h4>");
     }
     if(result > 10000000 ){
-        $(".operators").html("<h4>Please enter a smaller number!</h4>");
+        $("#operators").html("<h4>Please enter a smaller number!</h4>");
     }
 }
 function Sroot(){
@@ -131,13 +131,13 @@ function Sroot(){
   let result = Math.sqrt(val);
   result = result.toFixed(2);
   if (Number.isInteger(val)){
-        $(".operators").html("<h4>The result is " + result + "</h4>");
+        $("#operators").html("<h4>The result is " + result + "</h4>");
     }
     else {
-        $(".operators").html("<h4>Please enter a valid number!</h4>");
+        $("#operators").html("<h4>Please enter a valid number!</h4>");
     }
     if(result > 10000000 ){
-        $(".operators").html("<h4>Please enter a smaller number!</h4>");
+        $("#operators").html("<h4>Please enter a smaller number!</h4>");
     }
 }
 function Bmi(){
